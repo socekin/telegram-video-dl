@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: telegram-video-dl
+    restart: unless-stopped
+    volumes:
+      - ./.env:/app/.env
+    environment:
+      - TZ=Asia/Shanghai  # 设置时区
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

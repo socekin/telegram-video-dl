@@ -1,0 +1,7 @@
+python-telegram-bot[socks]==20.6
+yt-dlp==2024.3.10
+python-dotenv==1.0.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+urllib3==1.26.18
+gallery-dl==1.28.0
